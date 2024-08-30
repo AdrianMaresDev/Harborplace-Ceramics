@@ -99,8 +99,27 @@ h1 {
 
 .hero-text {
     color: #fff;
-    padding: 5rem 3rem;
+    padding: 10rem 3rem 0;
     max-width: 45rem;
     font-family: 'Cormorant Garamond', 'Montserrat', sans-serif;
     font-size: 1.3rem;
+}
+
+.hero-text p {
+    padding-bottom: 2rem;
+}
+
+.hero-text button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--cream);
+    border: 1px solid var(--cream);
+    transition: 0.3s ease;
+}
+
+.hero-text button:hover {
+    cursor: pointer;
+    background-color: var(--beige);
+    border: 1px solid var(--beige);
 }
