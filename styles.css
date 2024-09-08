@@ -91,8 +91,8 @@ h1 {
 
 .hero-section {
     background-image: url(images/hero-seashell.jpg);
-    height: 82svh;
-    height: 82vh;
+    min-height: 90svh;
+    min-height: 90vh;
     background-position: center;
     background-size: cover;
 }
@@ -134,12 +134,15 @@ h1 {
 h2 {
     font-weight: 400;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
+    font-family: 'Cormorant Garamond', 'Montserrat', sans-serif;
+    font-size: 2rem;
 }
 
 .featured-container {
     display: flex;
     justify-content: space-evenly;
+    gap: 1rem;
 }
 
 .featured-item img{
