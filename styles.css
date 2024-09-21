@@ -91,8 +91,7 @@ h1 {
 
 .hero-section {
     background-image: url(images/hero-seashell.jpg);
-    min-height: 90svh;
-    min-height: 90vh;
+    min-height: 82vh;
     background-position: center;
     background-size: cover;
 }
@@ -141,7 +140,8 @@ h2 {
 
 .featured-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin: 0 2rem;
     gap: 1rem;
 }
 
@@ -154,4 +154,21 @@ h2 {
 
 .featured-item span {
     font-style: italic;
+}
+
+.carousel-button {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--beige);
+    border: 1px solid var(--beige);
+    cursor: pointer;
+    margin-top: 12rem;
+    transition: color 0.3s ease;
+}
+
+.carousel-button:hover {
+    color: #000;
 }

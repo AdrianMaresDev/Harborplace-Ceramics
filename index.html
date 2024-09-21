@@ -44,9 +44,10 @@
                 <button>See our Autumn Collection</button>
             </div>
         </section>
-        <section class="featured-section">
+        <section class="featured-section" aria-label="Featured Products">
             <h2>Featured Products</h2>
-            <div class="featured-container">
+            <div class="featured-container carousel">
+                <button class="carousel-button"><i class="fa-solid fa-arrow-left"></i></button>
                 <div class="featured-item">
                     <img src="images/product-cup.jpg" alt="">
                     <p>Hand-Painted Drinkware</p>
@@ -62,13 +63,15 @@
                     <p>Custom Wavy Vase</p>
                     <span>$99.99</span>
                 </div>
-                <div class="featured-item">
+                <button class="carousel-button"><i class="fa-solid fa-arrow-right"></i></button>
+                <!--<div class="featured-item">
                     <img src="images/green-cup.jpg" alt="">
                     <p>Veridian Cup & Saucer</p>
                     <span>$49.99</span>
-                </div>
+                </div>-->
             </div>
         </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
