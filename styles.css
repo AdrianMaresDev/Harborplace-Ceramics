@@ -125,10 +125,6 @@ h1 {
 
 /*FEATURED SECTION*/
 
-.hidden {
-    display: none;
-}
-
 .featured-section {
     background-color: var(--cream);
     padding-bottom: 3rem;
