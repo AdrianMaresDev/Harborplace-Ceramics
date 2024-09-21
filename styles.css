@@ -140,7 +140,9 @@ h2 {
 
 .featured-container {
     display: flex;
+    transition: transform 0.5s ease;
     justify-content: space-around;
+    align-items: center;
     margin: 0 2rem;
     gap: 1rem;
 }
@@ -162,13 +164,13 @@ h2 {
     width: 4rem;
     font-size: 1rem;
     color: #fff;
-    background-color: var(--beige);
-    border: 1px solid var(--beige);
+    background-color: var(--teal);
+    opacity: 0.7;
+    border: 1px solid var(--teal);
     cursor: pointer;
-    margin-top: 12rem;
-    transition: color 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .carousel-button:hover {
-    color: #000;
+    opacity: 1;
 }
