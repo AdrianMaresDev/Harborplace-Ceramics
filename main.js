@@ -15,17 +15,19 @@ rightButton.addEventListener("click", slideNext);
 leftButton.addEventListener("click", slidePrev);
 
 function slideNext() {
-    currentSlide += itemsVisible;
-    if(currentSlide >= carouselItems.length) {
+    currentSlide += 1;
+
+    if (currentSlide > carouselItems.length - itemsVisible) {
         currentSlide = 0;
     }
     updateCarousel();
 }
 
 function slidePrev() {
-    currentSlide -= itemsVisible;
-    if(currentSlide < 0) {
-        currentSlide = Math.max(0, carouselItems.length - itemsVisible);
+    currentSlide -= 1;
+
+    if (currentSlide < 0) {
+        currentSlide = carouselItems.length - itemsVisible;
     }
     updateCarousel();
 }
