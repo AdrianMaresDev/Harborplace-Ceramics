@@ -128,6 +128,8 @@ h1 {
 .featured-section {
     background-color: var(--cream);
     padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
@@ -136,19 +138,19 @@ h2 {
     padding: 1rem 0;
     font-family: 'Cormorant Garamond', 'Montserrat', sans-serif;
     font-size: 2rem;
+    background-color: var(--cream);
 }
 
 .featured-container {
     display: flex;
     transition: transform 0.5s ease;
     justify-content: space-around;
-    align-items: center;
-    margin: 0 2rem;
-    gap: 1rem;
+    margin: 0 4rem;
+    gap: 3rem;
 }
 
 .featured-item img{
-    max-width: 18rem;
+    max-width: 19rem;
     height: auto;
     object-fit: cover;
     margin-bottom: 0.5rem;
@@ -169,6 +171,7 @@ h2 {
     border: 1px solid var(--teal);
     cursor: pointer;
     transition: opacity 0.3s ease;
+    margin-top: 13rem;
 }
 
 .carousel-button:hover {

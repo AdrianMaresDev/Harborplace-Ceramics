@@ -25,7 +25,7 @@ function slideNext() {
 function slidePrev() {
     currentSlide -= itemsVisible;
     if(currentSlide < 0) {
-        currentSlide = Math.max(0, carouselItems.length - itemsShown);
+        currentSlide = Math.max(0, carouselItems.length - itemsVisible);
     }
     updateCarousel();
 }
