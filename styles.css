@@ -143,10 +143,10 @@ h2 {
 
 .featured-container {
     display: flex;
-    transition: transform 0.5s ease;
     justify-content: space-around;
     margin: 0 4rem;
     gap: 3rem;
+    overflow: hidden;
 }
 
 .featured-item img{
@@ -161,8 +161,8 @@ h2 {
 }
 
 .carousel-button {
-    border-radius: 50%;
-    height: 4rem;
+    border-radius: 5px;
+    height: 3rem;
     width: 4rem;
     font-size: 1rem;
     color: #fff;
@@ -176,4 +176,40 @@ h2 {
 
 .carousel-button:hover {
     opacity: 1;
+}
+
+.left-button {
+    margin-left: 2rem;
+}
+
+.right-button {
+    margin-right: 2rem;
+}
+
+/*ABOUT SECTION*/
+
+.about-section {
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-section p {
+    max-width: 70%;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+h3 {
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 0;
+    font-family: 'Cormorant Garamond', 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+.about-section video {
+    max-width: 60%;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
 }
