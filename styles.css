@@ -213,3 +213,47 @@ h3 {
     padding-bottom: 3rem;
     padding-top: 1rem;
 }
+
+/*KITCHEN SECTION*/
+
+.kitchen-container {
+    background-color: var(--brown);
+    display: flex;
+}
+
+.kitchen-container img {
+    max-width: 55%;
+    object-fit: cover;
+}
+
+.kitchen-text {
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+.kitchen-text p:first-of-type {
+    padding-bottom: 1rem;
+}
+
+.kitchen-text h3 {
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.kitchen-text button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    background-color: var(--cream);
+    border: 1px solid var(--cream);
+    transition: 0.3s ease;
+}
+
+.kitchen-text button:hover {
+    cursor: pointer;
+    background-color: var(--beige);
+    border: 1px solid var(--beige);
+}
