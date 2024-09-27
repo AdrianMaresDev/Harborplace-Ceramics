@@ -125,7 +125,7 @@ h1 {
 
 /*FEATURED SECTION*/
 
-.featured-section {
+.featured-section, .sale-section {
     background-color: var(--cream);
     padding-bottom: 3rem;
     display: flex;
@@ -141,7 +141,7 @@ h2 {
     background-color: var(--cream);
 }
 
-.featured-container {
+.featured-container, .sale-container {
     display: flex;
     justify-content: space-around;
     margin: 0 4rem;
@@ -149,14 +149,14 @@ h2 {
     overflow: hidden;
 }
 
-.featured-item img{
+.featured-item img, .sale-item img {
     max-width: 19rem;
     height: auto;
     object-fit: cover;
     margin-bottom: 0.5rem;
 }
 
-.featured-item span {
+.featured-item span, .sale-item span {
     font-style: italic;
 }
 
@@ -217,7 +217,7 @@ h3 {
 /*KITCHEN SECTION*/
 
 .kitchen-container {
-    background-color: var(--brown);
+    background-color: var(--cream);
     display: flex;
 }
 
@@ -228,7 +228,6 @@ h3 {
 
 .kitchen-text {
     font-size: 1rem;
-    color: #fff;
     padding: 0 2rem;
 }
 
@@ -247,8 +246,8 @@ h3 {
     padding: 1rem;
     margin-top: 2rem;
     font-size: 1rem;
-    background-color: var(--cream);
-    border: 1px solid var(--cream);
+    background-color: #fff;
+    border: 1px solid #fff;
     transition: 0.3s ease;
 }
 
@@ -256,4 +255,23 @@ h3 {
     cursor: pointer;
     background-color: var(--beige);
     border: 1px solid var(--beige);
+}
+
+/*KITCHEN SALE ADDITIONAL STYLES*/
+
+.sale-section {
+    background-color: #fff;
+}
+
+.sale-item {
+    overflow: hidden;
+}
+
+.sale-item img {
+    transition: transform 0.3s ease;
+    transform-origin: bottom center;
+}
+
+.sale-item img:hover {
+    transform: scale(1.05);
 }
