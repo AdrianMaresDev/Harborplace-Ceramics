@@ -125,6 +125,16 @@ h1 {
 
 /*FEATURED SECTION*/
 
+.title-accent:first-of-type {
+    background-color: var(--cream);
+}
+
+.title-accent {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-style: italic;
+}
+
 .featured-section, .sale-section {
     background-color: var(--cream);
     padding-bottom: 3rem;
@@ -135,13 +145,13 @@ h1 {
 h2 {
     font-weight: 400;
     text-align: center;
-    padding: 1rem 0;
+    padding-top: 1rem;
     font-family: 'Cormorant Garamond', 'Montserrat', sans-serif;
     font-size: 2rem;
     background-color: var(--cream);
 }
 
-.featured-container, .sale-container {
+.featured-container, .sale-container, .testimonial-container {
     display: flex;
     justify-content: space-around;
     margin: 0 4rem;
@@ -200,10 +210,14 @@ h2 {
     font-size: 1rem;
 }
 
+.about-section p:first-of-type {
+    padding-top: 1rem;
+}
+
 h3 {
     font-weight: 400;
     text-align: center;
-    padding: 1rem 0;
+    padding-top: 1rem;
     font-family: 'Cormorant Garamond', 'Montserrat', sans-serif;
     font-size: 2rem;
 }
@@ -232,7 +246,7 @@ h3 {
 }
 
 .kitchen-text p:first-of-type {
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 .kitchen-text h3 {
@@ -267,11 +281,60 @@ h3 {
     overflow: hidden;
 }
 
-.sale-item img {
+.sale-item img{
     transition: transform 0.3s ease;
     transform-origin: bottom center;
 }
 
 .sale-item img:hover {
     transform: scale(1.05);
+}
+
+/*TESTIMONIAL SECTION ADDITIONAL STYLES*/
+
+.testimonial-section {
+    background-color: var(--cream);
+}
+
+.testimonial-section > p {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.testimonial-container {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.testimonial {
+    max-width: 22rem;
+    height: auto;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial p{
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.testimonial span {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.testimonial img {
+    max-width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-bottom: 0.5rem;
+    align-self: center;
+}
+
+.quote {
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.3rem;
 }
