@@ -307,7 +307,7 @@ h3 {
 }
 
 .testimonial {
-    max-width: 22rem;
+    max-width: 25rem;
     height: auto;
     background-color: #fff;
     padding: 1rem 2rem;
@@ -337,4 +337,67 @@ h3 {
     font-weight: 700;
     font-size: 1.1rem;
     padding: 0.3rem;
+}
+
+/*BLOG GALLERY*/
+
+.blog-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 3rem 2rem 3rem 1rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.image-long {
+    max-width: 12rem;
+    max-height: auto;
+    object-fit: cover;
+}
+
+.image-short {
+    max-width: 12rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-text {
+    font-size: 1rem;
+    padding: 0 2rem;
+}
+
+.blog-text p:first-of-type {
+    padding: 1rem 0;
+}
+
+.blog-text h3 {
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.blog-text button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    background-color: var(--cream);
+    border: 1px solid var(--cream);
+    transition: 0.3s ease;
+}
+
+.blog-text button:hover {
+    cursor: pointer;
+    background-color: var(--beige);
+    border: 1px solid var(--beige);
 }
