@@ -403,18 +403,40 @@ h3 {
     border: 1px solid var(--beige);
 }
 
-/*NEWSLETTER SECTION*/
+/*NEWSLETTER & FOOTER SECTION*/
 
-.newsletter {
-    background-color: var(--teal);
-    padding: 3rem;
+.fixed-bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/ceramic-wh.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 60vh;
 }
 
-.newsletter-container {
-    margin: 0 auto;
-    max-width: 60%;
-    text-align: center;
+h4 {
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Cormorant Garamond', 'Montserrat', sans-serif;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--teal);
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+footer a:hover {
+    color: #000;
+}
+
+.newsletter {
+    text-align: left;
     font-size: 1rem;
+    max-width: 50vw;
 }
 
 #email-form {
@@ -431,27 +453,61 @@ h3 {
     border: none;
     height: 2rem;
     width: 25rem;
-    margin: 0 auto;
+    padding: 1rem;
     font-size: 1rem;
 }
 
 #email-form button {
     border: none;
-    background-color: #000;
+    background-color: var(--grey);
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     height: 2rem;
     width: 10rem;
-    margin: 0 auto;
     margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-h4 {
-    font-weight: 400;
+#email-form button:hover {
+    background-color: #000;
+}
+
+.links-column ul {
+    flex-direction: column;
+    gap: 0;
+}
+
+footer span {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+footer ul li {
+    padding-top: 0.5rem;
+}
+
+footer ul {
+    gap: 1rem;
+}
+
+footer i {
+    font-size: 1.2rem;
+}
+
+/*CONTACT*/
+
+.my-contact {
+    background-color: #fff;
+    padding: 0.5rem;
     text-align: center;
-    font-family: 'Cormorant Garamond', 'Montserrat', sans-serif;
-    font-size: 2rem;
-    padding-bottom: 1rem;
 }
 
+.my-contact a {
+    color: #000;
+}
+
+.my-contact i {
+    padding: 0 0.3rem;
+}
