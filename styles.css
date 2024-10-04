@@ -58,6 +58,12 @@ a:hover {
     margin-left: 0.5rem;
 }
 
+@media (max-width: 768px) {
+    .nav-bar {
+        justify-content: center;
+    }
+}
+
 .logo img {
     max-width: 2.5rem;
     object-fit: contain;
@@ -78,6 +84,13 @@ a:hover {
     border-top: 1px solid var(--beige);
     background-color: var(--cream);
     padding: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .nav-pages ul {
+        justify-content: right;
+        padding-right: 2rem;
+    }
 }
 
 .sidebar {
@@ -105,6 +118,18 @@ a:hover {
 
 .menu-icon {
     font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
 }
 
 /*HERO SECTION*/
