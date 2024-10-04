@@ -41,7 +41,7 @@ a:hover {
 .nav-infobar {
     background-color: var(--teal);
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
     font-size: 0.8rem;
     font-weight: 500;
 }
@@ -156,6 +156,15 @@ h1 {
     font-size: 1.3rem;
 }
 
+@media (max-width: 768px) {
+    .hero-text {
+        padding: 5rem 3rem 3rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
 .hero-text p {
     padding-bottom: 2rem;
 }
@@ -184,6 +193,8 @@ h1 {
 .title-accent {
     text-align: center;
     padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-style: italic;
 }
 
@@ -223,9 +234,8 @@ h2 {
 }
 
 .carousel-button {
-    border-radius: 5px;
-    height: 3rem;
-    width: 4rem;
+    max-height: 3rem;
+    min-width: 3rem;
     font-size: 1rem;
     color: #fff;
     background-color: var(--teal);
@@ -280,6 +290,12 @@ h3 {
     padding-top: 1rem;
 }
 
+@media (max-width: 768px) {
+    .about-section video {
+        max-width: 80%;
+    }
+}
+
 /*KITCHEN SECTION*/
 
 .kitchen-container {
@@ -290,6 +306,16 @@ h3 {
 .kitchen-container img {
     max-width: 55%;
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .kitchen-container {
+        flex-direction: column;
+    }
+    .kitchen-container img {
+        max-width: 100vw;
+        order: -1;
+    }
 }
 
 .kitchen-text {
@@ -323,6 +349,18 @@ h3 {
     border: 1px solid var(--beige);
 }
 
+@media (max-width: 768px) {
+    .kitchen-text {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    .kitchen-text h3 {
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 2rem;
+    }
+}
+
 /*KITCHEN SALE ADDITIONAL STYLES*/
 
 .sale-section {
@@ -340,6 +378,15 @@ h3 {
 
 .sale-item img:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .sale-container {
+        flex-direction: column;
+    }
+    .sale-item {
+        text-align: center;
+    }
 }
 
 /*TESTIMONIAL SECTION ADDITIONAL STYLES*/
@@ -391,6 +438,13 @@ h3 {
     padding: 0.3rem;
 }
 
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /*BLOG GALLERY*/
 
 .blog-section {
@@ -424,6 +478,20 @@ h3 {
     object-fit: cover;
 }
 
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+        padding: 0 0 3rem 0;
+    }
+    .gallery-container img {
+        width: 15rem;
+        max-width: none;
+    }
+    .column {
+        gap: 1;
+    }
+}
+
 .blog-text {
     font-size: 1rem;
     padding: 0 3rem;
@@ -453,6 +521,21 @@ h3 {
     cursor: pointer;
     background-color: var(--beige);
     border: 1px solid var(--beige);
+}
+
+@media (max-width: 768px) {
+    .blog-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .blog-section h3 {
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 2rem;
+    }
+    .blog-text {
+        padding-bottom: 3rem;
+    }
 }
 
 /*NEWSLETTER & FOOTER SECTION*/
@@ -546,6 +629,20 @@ footer ul {
 
 footer i {
     font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    .newsletter {
+        max-width: 80vw;
+    }
+    #email-form input {
+        width: 18rem;
+    }
 }
 
 /*CONTACT*/
