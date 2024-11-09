@@ -289,10 +289,16 @@ h2 {
     height: auto;
     object-fit: cover;
     margin-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 .featured-item span, .sale-item span {
     font-style: italic;
+    cursor: pointer;
+}
+
+.featured-item p, .sale-item p {
+    cursor: pointer;
 }
 
 .carousel-button {
