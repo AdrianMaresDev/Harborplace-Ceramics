@@ -22,16 +22,29 @@ const leftButton = document.querySelector(".left-button");
 const rightButton = document.querySelector(".right-button");
 
 let currentSlide = 0;
-const itemsVisible = 3;
+let itemsVisible = numOfItemsVisible();
+
+function numOfItemsVisible() {
+    if (window.innerWidth < 600) {
+        return 1;
+    } else if (window.innerWidth < 900) {
+        return 2;
+    } else {
+        return 3;
+    }
+}
 
 function updateCarousel() {
+    itemsVisible = numOfItemsVisible();
+    console.log("Update carousel");
     carouselItems.forEach((item, index) => {
         item.style.display = (index >= currentSlide && index < currentSlide + itemsVisible) ? 'block' : 'none';
-    })
+    });
 }
 
 rightButton.addEventListener("click", slideNext);
 leftButton.addEventListener("click", slidePrev);
+window.addEventListener("resize", updateCarousel);
 
 function slideNext() {
     currentSlide += 1;

@@ -301,6 +301,10 @@ h2 {
     cursor: pointer;
 }
 
+.featured-item {
+    display: none;
+}
+
 .carousel-button {
     max-height: 3rem;
     min-width: 3rem;
@@ -453,9 +457,9 @@ h3 {
     transform: scale(1.05);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .sale-container {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .sale-item {
         text-align: center;
@@ -588,6 +592,7 @@ h3 {
     background-color: var(--cream);
     border: 1px solid var(--cream);
     transition: 0.3s ease;
+    margin-bottom: 2rem;
 }
 
 .blog-text button:hover {
@@ -598,7 +603,8 @@ h3 {
 
 @media (max-width: 1024px) {
     .blog-section {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         text-align: center;
     }
     .blog-section h3 {
@@ -608,6 +614,9 @@ h3 {
     }
     .blog-text {
         padding-bottom: 3rem;
+    }
+    .hide-mobile {
+        display: none;
     }
 }
 
